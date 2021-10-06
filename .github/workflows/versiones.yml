@@ -1,5 +1,5 @@
 name: Versiones
-on: Pull
+on: [push]
 jobs: 
   build: 
     runs-on: ubuntu-latest
