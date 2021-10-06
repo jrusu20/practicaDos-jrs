@@ -1,0 +1,9 @@
+name: Acciones en Comentarios
+on: issue_comment
+jobs: 
+  AccionComent:
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    environment: PRUEBAS
+    steps:
+      - run: echo "Comentario en la issues ${{ github.event.issue.number }}"
