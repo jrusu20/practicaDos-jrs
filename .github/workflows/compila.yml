@@ -2,7 +2,7 @@
 name: Compilando Practica2
 on: 
   issues:
-   types: closed
+   types: [opened,closed]
 jobs: 
   AlAbrir:
     runs-on: ubuntu-latest
